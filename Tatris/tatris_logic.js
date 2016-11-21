@@ -89,6 +89,14 @@ function getInput(e) {
 	}
 }
 
+function fetchHiScore() {
+	if(window.XMLHttpRequest) {
+		xmlhttp = new XMLHttpRequest();
+	} else {
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+
 function updateHiScore(newScore) {
 	if(window.XMLHttpRequest) {
 		xmlhttp = new XMLHttpRequest();
