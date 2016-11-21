@@ -34,6 +34,7 @@ function onReady() {
 	canvas = document.getElementById("gameCanvas");
 	ctx = canvas.getContext("2d");
 	lineSpan = document.getElementById("lines");
+	fetchHiScore();
 	
 	previousTime = currentTime = 0;
 	
@@ -87,6 +88,21 @@ function getInput(e) {
 			initGame();
 		} 
 	}
+}
+
+function fetchHiScore() {
+	if(window.XMLHttpRequest) {
+		xmlhttp = new XMLHttpRequest();
+	} else {
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.onload = function() {
+		highscore = this.responseText;
+	};
+	
+	xmlhttp.open("GET","tatris_fetchingHighScore.php",true);
+	xmlhttp.send();
 }
 
 function updateHiScore(newScore) {
