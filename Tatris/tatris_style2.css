@@ -1,0 +1,28 @@
+.wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.left-floater {
+	display: inline-block;
+	width: 65%;
+	margin: 0;
+	padding: 0;
+}
+
+.right-floater {
+	display: inline-block;
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.sidebar {
+	padding-top: 20px;
+	font-size: 18pt;
+	font-family: sans-serif, verdana;
+	color: #fefefe;
+	width: 320px;
+	margin: 0 auto;
+}
