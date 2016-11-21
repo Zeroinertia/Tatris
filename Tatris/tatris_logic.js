@@ -101,7 +101,7 @@ function fetchHiScore() {
 		highscore = this.responseText;
 	};
 	
-	xmlhttp.open("GET","tatris_fetchHighScore.php",true);
+	xmlhttp.open("GET","tatris_fetchingHighScore.php",true);
 	xmlhttp.send();
 	
 
