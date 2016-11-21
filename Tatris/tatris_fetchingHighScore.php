@@ -13,5 +13,5 @@
 	
 	$highScore = $result[0]
   
-  return $highScore;
+	echo json_encode($highScore);
 ?>
