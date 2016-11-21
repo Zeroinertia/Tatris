@@ -103,7 +103,7 @@ function fetchHiScore() {
 	
 	xmlhttp.open("GET","tatris_fetchingHighScore.php",true);
 	xmlhttp.send();
-	
+}
 
 function updateHiScore(newScore) {
 	if(window.XMLHttpRequest) {
