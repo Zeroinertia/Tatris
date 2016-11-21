@@ -98,7 +98,8 @@ function fetchHiScore() {
 	}
 	
 	xmlhttp.onload = function() {
-		highscore = this.responseText;
+		var topscore = this.responseText;
+		highscore = topscore.replace(/"/ig,"");
 	};
 	
 	xmlhttp.open("GET","tatris_fetchingHighScore.php",true);
