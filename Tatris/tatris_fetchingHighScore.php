@@ -11,7 +11,7 @@
 	
 	$result = mysqli_fetch_row($query);
 	
-	$highScore = $result[0]
+	$highScore = $result[0];
   
 	echo json_encode($highScore);
 ?>
