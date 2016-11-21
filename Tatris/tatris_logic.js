@@ -18,7 +18,7 @@ var lineSpan;
 
 var currentLines;
 var score = 0;
-var highscore = 0;
+var highscore = fetchHiScore();
 
 
 window.onload = onReady;
@@ -34,7 +34,6 @@ function onReady() {
 	canvas = document.getElementById("gameCanvas");
 	ctx = canvas.getContext("2d");
 	lineSpan = document.getElementById("lines");
-	fetchHiScore();
 	
 	previousTime = currentTime = 0;
 	
@@ -126,6 +125,7 @@ function onImagesLoaded(e) {
 }
 
 function initGame() {
+	fetchHiScore();
 	var r, c;
 	currentLines = 0;
 	score = 0;
