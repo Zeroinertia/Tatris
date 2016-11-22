@@ -47,7 +47,7 @@
 	
 		<div class="sidebar" >
 			<p>Top-10
-			<br><span id="topten"></span></p>
+			<br><embed src="tatris_topten.php" id="topten"></p>
 		</div>
 	</div>
 </div>
