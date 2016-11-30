@@ -56,7 +56,7 @@
 
 <script type="text/javascript" src="tatris_logic.js"></script>
 <script>
-	function logoutOnUnload() {
+	window.onbeforeunload = function logoutOnUnload() {
 	if(window.XMLHttpRequest) {
 		xmlhttp = new XMLHttpRequest();
 	} else {
