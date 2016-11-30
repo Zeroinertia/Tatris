@@ -39,9 +39,11 @@
 <script>
   document.getElementById("loginBtn").onclick = function() 
   {
-    myFunction()
-    {
-      document.getElementById("logindrop").classList.toggle("show");
-    }
+    dropDownFunc()
+  };
+  
+  function dropDownFunc()
+  {
+    document.getElementById("logindrop").classList.toggle("show");
   }
 </script>
