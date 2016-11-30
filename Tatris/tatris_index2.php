@@ -55,6 +55,18 @@
 <script type="text/javascript" src="tatris_BulkImageLoader.js"></script>
 
 <script type="text/javascript" src="tatris_logic.js"></script>
+<script>
+	function logoutOnUnload() {
+	if(window.XMLHttpRequest) {
+		xmlhttp = new XMLHttpRequest();
+	} else {
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.open("GET","tatris_disconnect.php",true);
+	xmlhttp.send();
+}
+</script>
 </body>
 
 </html>
