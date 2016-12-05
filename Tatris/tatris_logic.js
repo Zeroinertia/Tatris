@@ -48,18 +48,21 @@ function getInput(e) {
 	if(isGameOver != true) {
 		switch(e.keyCode) {
 			
+			case 65: {}
 			case 37: 
 			if(checkMove(ourPiece.gridX - 1, ourPiece.gridY, ourPiece.curState)) {
 				ourPiece.gridX--;
 			}
 			break;
 			
+			case 68: {}
 			case 39:
 			if(checkMove(ourPiece.gridX + 1, ourPiece.gridY, ourPiece.curState)) {
 				ourPiece.gridX++;
 			}
 			break;
 			
+			case 87: {}
 			case 38:
 			{
 			var newState = ourPiece.curState - 1;
@@ -73,6 +76,7 @@ function getInput(e) {
 			}
 			break;
 			
+			case 83: {}	
 			case 40:
 			if(checkMove(ourPiece.gridX, ourPiece.gridY + 1, ourPiece.curState)) {
 				ourPiece.gridY++;
