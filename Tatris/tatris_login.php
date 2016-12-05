@@ -17,6 +17,10 @@
 		{
 			echo "<script type=\"javascript\">alert(\"You've logged out successfully.\");</script>";
 		}
+		else if($_GET['ktss']=="iv")
+		{
+			echo "<script>alert('Username already in use.');</script>";
+		}
 	}
 ?>
 
@@ -78,7 +82,7 @@
 				
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown">Sign up <span class="glyphicon glyphicon-user"></span></a>
-					<form class="dropdown-menu" action="login_check.php" method="post">
+					<form class="dropdown-menu" action="tatris_signup.php" method="post">
 						<fieldset>
 							<legend>Signup Information</legend>
 							<p>Username: <input type="text" name="uname" /></p>
