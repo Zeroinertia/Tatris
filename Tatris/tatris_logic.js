@@ -153,6 +153,7 @@ function initGame() {
 	
 	lineSpan.innerHTML = currentLines.toString();
 	document.getElementById("points").innerHTML = score.toString();
+	document.getElementById("highscore").innerHTML = highscore.toString();
 	
 	var requestAFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || 
 								window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
