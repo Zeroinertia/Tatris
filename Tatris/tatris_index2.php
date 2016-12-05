@@ -3,7 +3,7 @@
 	session_start();
 	if(!array_key_exists('login',$_SESSION))
 	{
-		header("location:tatris_loginpage.php?ktss=f");
+		header("location:tatris_login.php?ktss=f");
 	}
 ?>
 
