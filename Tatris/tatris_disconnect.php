@@ -1,5 +1,5 @@
 <?php
   session_start();
   session_destroy();
-  header("location:tatris_loginpage.php?ktss=lo");
+  header("location:tatris_login.php?ktss=lo");
 ?>
