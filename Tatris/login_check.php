@@ -19,7 +19,7 @@
 			header("location:tatris_index2.php");
 		} else {
 			session_destroy();
-			header("location:tatris_loginpage.php?ktss=f");
+			header("location:tatris_login.php?ktss=f");
 		}
 	}
 ?>

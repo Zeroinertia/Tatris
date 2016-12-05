@@ -3,7 +3,7 @@
 	session_start();
 	if(!array_key_exists('login',$_SESSION))
 	{
-		header("location:tatris_loginpage.php?ktss=f");
+		header("location:tatris_login.php?ktss=f");
 	}
 ?>
 
@@ -55,6 +55,18 @@
 <script type="text/javascript" src="tatris_BulkImageLoader.js"></script>
 
 <script type="text/javascript" src="tatris_logic.js"></script>
+<script>
+	window.onbeforeunload = function logoutOnUnload() {
+	if(window.XMLHttpRequest) {
+		xmlhttp = new XMLHttpRequest();
+	} else {
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.open("GET","tatris_disconnect.php",true);
+	xmlhttp.send();
+}
+</script>
 </body>
 
 </html>
