@@ -1,0 +1,75 @@
+body
+{
+	background-color:#000;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.left-floater {
+	display: inline-block;
+	width: 65%;
+	margin: 0;
+	padding: 0;
+}
+
+.right-floater {
+	display: inline-block;
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.sidebar {
+	padding-top: 20px;
+	font-size: 18pt;
+	font-family: sans-serif, verdana;
+	color: #fefefe;
+	width: 320px;
+	margin: 0 auto;
+}
+
+#gameBoard
+{
+	background-color:#8a8a8a;	
+	width:320px;
+	height:640px;
+	margin:0 auto;
+	/*border: 2px solid #6e6e7b;*/
+}
+
+#gameCanvas
+{
+	width:320px;
+	height:640px;
+	margin:0 auto;
+	border:0px;
+}
+
+#score
+{
+	font-size: 18pt;
+	font-family: sans-serif, verdana;
+	color: #fefefe;
+	width: 320px;
+	margin: 0 auto;
+}
+
+#directions p
+{
+	font-size: 14pt;
+	font-family: sans-serif, verdana;
+	color: #fefefe;
+	width: 320px;
+	margin: 0 auto;
+}
+
+#topten
+{
+	margin: 0 auto;
+	padding: 0px;
+	height: 360px;
+}
