@@ -73,7 +73,18 @@
 <script type="text/javascript" src="../js/tatris_logic.js"></script>
 <script>
 	// Logout when closing the site.
-	window.onbeforeunload = logout() 
+	window.onbeforeunload = function logout() 
+	{
+		if(window.XMLHttpRequest) {
+			xmlhttp = new XMLHttpRequest();
+		} else {
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		
+		xmlhttp.open("GET","tatris_disconnect.php",true);
+		xmlhttp.send();
+		
+	}
 </script>
 
 </body>
