@@ -41,7 +41,7 @@
 	.jumbotron
 	{
 		text-align:center;
-		background-image:url("cube.png");
+		background-image:url("../img/cube.png");
 		background-size:80%;
 	}
 	.dropdown-menu

@@ -1,5 +1,6 @@
 function LPiece() 
 {
+	// Defining the different rotations of the piece.
 	this.state1 = [ [1, 0],
 					[1, 0],
 					[1, 1] ];
@@ -14,9 +15,11 @@ function LPiece()
 	this.state4 = [	[1, 1, 1],
 					[1, 0, 0] ];
 					
+	// Setting the rotations to an array that can be cycled through. Starting state is the first rotation.
 	this.states = [this.state1, this.state2, this.state3, this.state4];
 	this.curState = 0;
 	
+	// Picking the colour of the block from the block image and setting it's starting position based on it's height and width.
 	this.color = 3;
 	this.gridX = 4;
 	this.gridY = -3;
@@ -134,6 +137,7 @@ function SPiece()
 	this.gridY = -2;
 }
 
+// Randomly selecting a piece.
 function getRandomPiece() 
 {
 	var result = Math.floor( Math.random() * 7);
@@ -150,6 +154,6 @@ function getRandomPiece()
 		case 6: piece = new LinePiece();	break;
 	}
 	
-	//piece.color = Math.floor(Math.random() * 8);
+	//piece.color = Math.floor(Math.random() * 8);			<- Possibility to randomize colours of pieces.
 	return piece;
 }
